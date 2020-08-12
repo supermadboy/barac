@@ -241,6 +241,10 @@ body {
     &__footer {
         text-align: center;
         margin-bottom: 70px;
+
+        @media (min-width: $breakpoint) {
+            margin-bottom: 20px;
+         }
     }
 }
 
