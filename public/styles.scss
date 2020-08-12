@@ -1,0 +1,278 @@
+$breakpoint: 768px;
+$yellow: #FFFF00;
+$black: #000000;
+$white: #FFFFFF;
+$mobileTopMargin: 250px;
+
+$mobileTitleSize: 80px;
+
+@import './assets/fonts/fonts.css';
+
+* {
+    margin: 0;
+    font-family: 'Lyyra Extended';
+}
+
+body {
+    position: absolute;
+}
+
+.yellow {
+    color: $yellow
+}
+
+.header {
+    height: $mobileTopMargin;
+    position: fixed;
+    width: 100%;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+    
+        @media (min-width: $breakpoint) { 
+            justify-content: space-between;
+        }
+    
+        &__tags {
+            display: none;
+    
+            @media (min-width: $breakpoint) { 
+                display: block;
+                width: 350px;
+            }
+        }
+    
+        &__info {
+            width: 90px;
+            height: 39px;
+            background-color: $yellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+    
+        &__address {
+            display: none;
+    
+            @media (min-width: $breakpoint) { 
+                display: block;
+                width: 350px;
+                text-align: right;
+                word-break: break-all;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: $mobileTitleSize;
+        font-weight: bold;
+    }
+}
+
+.mobile__version {
+    margin-top: $mobileTopMargin;
+
+    @media (min-width: $breakpoint) {
+        display: none;
+    }
+
+    img {
+        display: block;
+    }
+
+    .tags {
+        margin-right: 10%;
+        margin-bottom: 40px;
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .image {
+
+        &__gesamtansicht {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        &__wagon {
+            width: 25%;
+        }
+
+        &__dachwohnung {
+            width: 25%;
+            margin-left: 20%;
+            margin-bottom: 40px;
+        }
+        
+        &__einraumhaus {
+            width: 40%;
+            margin-left: auto;
+            margin-bottom: 20px;
+        }
+        
+        &__schalen {
+            margin-left: 40%;
+            width: 30%;
+            margin-bottom: 30px;
+        }
+
+        &__alter_leer {
+            margin-left: 10%;
+            width: 40%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        
+        &__einraumhaus_tor {
+            margin-left: 40%;
+            width: 50%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.desktop__version {
+    display: none;
+
+    @media (min-width: $breakpoint) {
+        display: block;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+.popup {
+    background-color: $black;
+    color: $white;
+    position: fixed;
+    top: -2000px;
+    transition: top 0.2s ease-out;
+    visibility: hidden;
+
+    &__scroll_body {
+        padding: 0 30px;
+        overflow: auto;
+    }
+
+    p {
+        font-family: 'Barlow';
+    }
+
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+
+        p {
+            font-family: 'Lyyra Extended';
+        }
+
+        &__title {    
+            font-size: $mobileTitleSize;
+        }
+
+        &__subtitle {    
+            font-size: 20px;
+        }
+    }
+
+    &__subheader {
+        text-align: center;
+        margin-bottom: 40px;
+
+        &__info {
+            margin-bottom: 10px;
+        }
+
+        &__address {
+            color: $yellow;
+        }
+    }
+
+    &__body {
+        margin-bottom: 40px;
+
+        &__section {
+
+            &__title {    
+                border-bottom: 1px solid $white;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+            }
+
+            &__subtitle {
+                font-weight: bold;
+            }
+
+            &__text {
+
+            }
+        }
+    }
+
+    &__footer {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+.footer {
+    margin: 40px 10px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+
+    .down-arrow,
+    .up-arrow {
+        border: solid black;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        width: 0;
+    }
+
+    .down-arrow {
+        border-width: 0 2px 2px 0;
+    }
+
+    .up-arrow {
+        border-width: 2px 0 0 2px;
+        margin-top: 2px;
+        visibility: visible;
+        transition: margin ease-out 1s, padding ease-out 1s, visibility step-start 1s;
+
+        &.hidden {
+            padding: 0px;
+            margin-left: 5px;
+            visibility: hidden;
+            transition: margin ease-out 1s, padding ease-out 1s, visibility step-end 1s;
+        }
+    }
+
+}
+
+.bubble {
+    &__left,
+    &__right {
+        margin-bottom: 20px;
+    }
+
+    &__left {
+        margin-left: auto;
+    }
+
+    &__right {
+        transform: rotate(180deg);
+    }
+}

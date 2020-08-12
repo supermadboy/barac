@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url('Barlow-SemiBold.woff2') format('woff2'),
+        url('Barlow-SemiBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('Barlow-Regular.woff2') format('woff2'),
+        url('Barlow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('MinionPro-Regular.woff2') format('woff2'),
+        url('MinionPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lyyra Extended';
+    src: url('LyyraExtended-Bold.woff2') format('woff2'),
+        url('LyyraExtended-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

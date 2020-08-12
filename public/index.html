@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barac</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js" ></script>
+</head>
+<body>
+    <header 
+        class="header"
+        id="header"
+    >
+        <div class="header__box">
+            <p class="header__box__tags">Kunst/Labor/Soziales</p>
+            <div 
+                class="header__box__info"
+                onclick="showPopup()"
+            >
+                <div class="icon">
+                    <div class="down-arrow"></div>
+                    <div id="up-arrow" class="up-arrow hidden"></div>
+                </div>
+                <p class="header__box__info--text">Info</p>
+            </div>
+            <p class="header__box__address">George Sulivan Ring 61/63/65/67/69</p>
+        </div>
+        <p class="header__title">barac</p>
+    </header>
+    <div class="mobile__version">
+        <img class="image__gesamtansicht" src="assets/images/gesamtansicht_mobile.jpg" />
+
+        <img class="bubble__right" src="assets/images/Kugeln_mobile.gif">
+
+        <img class="image__wagon" src="assets/images/foodtruck.gif" />
+        <p class="tags">Kunst/Labor/Soziales</p>
+        <img class="image__dachwohnung" src="assets/images/dachwohnung_mobile.jpg" />
+        <img class="image__einraumhaus" src="assets/images/einraumhaus_mobile.jpg" />
+
+        <img class="bubble__left" src="assets/images/Kugeln_mobile.gif">
+
+        <img class="image__schalen" src="assets/images/schalen.gif" />
+        <img class="image__alter_leer" src="assets/images/alter_leer_mobile.jpg" />
+        <img class="image__einraumhaus_tor" src="assets/images/einraumhaus_tor_mobile.jpg" />
+
+        <img class="bubble__right" src="assets/images/Kugeln_mobile.gif">
+    </div>
+    <div class="desktop__version">
+        <div class="body__upper">
+            <div class="body__upper__left">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/gesamtansicht_desktop.jpg">
+                    <img src="assets/images/gesamtansicht_mobile.jpg">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/schalen.gif">
+                    <img src="assets/images/schalen.gif">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/foodtruck.gif">
+                    <img src="assets/images/foodtruck.gif">
+                </picture>
+            </div>
+            <div class="body__upper__right">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/dachwohnung_desktop.jpg">
+                    <img src="assets/images/dachwohnung_mobile.jpg">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/einraumhaus_desktop.jpg">
+                    <img src="assets/images/einraumhaus_mobile.jpg">
+                </picture>
+            </div>
+        </div>
+        <p class="header__box__tags">Kunst/Labor/Soziales</p>
+        <img class="bubble__right" src="assets/images/Kugeln_mobile.gif">
+        <div class="body__lower">
+            <div class="body__lower__left">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/alter_leer_desktop.jpg">
+                    <img src="assets/images/alter_leer_mobile.jpg">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/einraumhaus_tor_desktop.jpg">
+                    <img src="assets/images/einraumhaus_tor_mobile.jpg">
+                </picture>
+            </div>
+            <div class="body__lower__right">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/yufkas_desktop.jpg">
+                    <img src="assets/images/yufkas_mobile.jpg">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/collage_mobile.jpg">
+                    <img src="assets/images/collage_mobile.jpg">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/alter_desktop.jpg">
+                    <img src="assets/images/alter_mobile.jpg">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="popup"
+        id="popup"
+    >
+        <div
+            class="popup__scroll_body"
+            id="popup__scroll_body"
+        >
+        <div class="popup__header">
+            <p class="popup__header__title">barac</p>
+            <p class="popup__header__subtitle">ist</p>
+            <p class="popup__header__subtitle">Kunst/Labor/Soziales</p>
+        </div>
+        
+        <div class="popup__subheader">
+            <p class="popup__subheader__info">Gebäude, Fundament, Ausstellungsfläche, ganzheitliches Gesellschaftskonzept, inklusives Wohnen, Kunstlabor, Farblabor, Erdlabor, Küchenlabor…. ...</p>
+            <div class="popup__subheader__address">
+                <p>Franklin</p>
+                <p>George Sullivan Ring 61/63/65/67/69</p>
+                <p>Haltestelle: Platz der Freundschaft</p>
+            </div>
+        </div>
+
+        <div class="popup__body">
+            <div class="popup__body__section">
+                <h3 class="popup__body__section__title">Eröffnungswochenende 1</h3>
+                <h3 class="popup__body__section__subtitle">04.09. – ab 18 Uhr</h3>
+                <p class="popup__body__section__subtitle">Performance: Ianas Gang In Die Unterwelt</p>
+                <p class="popup__body__section__text">
+                    Julla Kroner                    
+                </p>
+                <br />
+                <h3 class="popup__body__section__subtitle">05.09. – ab 16 Uhr</h3>
+                <p class="popup__body__section__subtitle">Performance: Off The Grid II</p>
+                <p class="popup__body__section__text">
+                    Helen Weber/Fabian Widukind Penzkofer/Kai Fischer                    
+                </p>
+                <br />
+                <h3 class="popup__body__section__subtitle">06.09. – ab 15 Uhr</h3>
+                <br />
+            </div>
+            <div class="popup__body__section">
+                <h3 class="popup__body__section__title">Eröffnungswochenende 2</h3>
+                <h3 class="popup__body__section__subtitle">11.09. – ab 18 Uhr</h3>
+                <br />
+                <h3 class="popup__body__section__subtitle">12.09. – ab 16 Uhr</h3>
+                <br />
+                <h3 class="popup__body__section__subtitle">13.09. – ab 15 Uhr</h3>
+                <br />
+                
+                <h3 class="popup__body__section__title">Musik</h3>
+                <p class="popup__body__section__text">
+                    an beiden Wochenenden: Nojoke Radio                    
+                </p>
+                <br />
+            </div>
+            <div class="popup__body__section popup__body__section--full">
+                <h3 class="popup__body__section__title">Ausstellung</h3>
+                <p class="popup__body__section__text">
+                    Myriam Holme, Philipp Morlock, Jörg Gelbke, Anna Schwehr, Julla Kroner, Cynthia Wijono, Sara Wieckenberg, Thai Tai Pham, Jan Läkemäker, Martin Pöll, Nicholas Frotscher, Jonathan Dögler, Jonathan Mink, Tamara Goehringe, Paulina Lange, Hyein Kim, Michelle Mousavi, Alina Wittig, Maximilian Martinez, Laura Sacher, Marie Schönheiter, Soma Mizutani
+                </p>
+                
+                <br />
+            </div>
+        </div>
+
+        <div class="popup__footer">
+            <p class="yellow">Es gelten die Corona-Maßnahmen des Landes Baden-Württemberg. Sofern ein Abstand von 1,5 Metern nicht eingehalten werden kann, tragen Sie bitte eine Mund-Nasen-Bedeckung.</p>
+            <br />
+
+            <p>More Infos about barac coming soon, for newsletter mail to:</p>
+            <h4>people@barac-mannheim.de</h4>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <p>Franklin – George Sullivan Ring 61/63/65/67/69 – Mannheim</p>
+        <p>Haltestelle: Platz der Freundschaft</p>
+        <p>people@barac-mannheim.de</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+pscp -r -P 2012 Desktop\Project\barac\public\* pi@raspberrypi.local:barac/ 
+sass --watch styles.scss index.css --style compressed --no-source-map
+uglifyjs script.js -o index.js -c
