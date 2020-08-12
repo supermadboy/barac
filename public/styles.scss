@@ -146,7 +146,12 @@ body {
     }
 
     img {
-        width: 80%;
+        width: 20%;
+    }
+
+    .body__upper,
+    .body__lower {
+        display: flex;
     }
 }
 
@@ -157,6 +162,10 @@ body {
     top: -2000px;
     transition: top 0.2s ease-out;
     visibility: hidden;
+
+    @media (min-width: $breakpoint) {
+       // width: 1000px;
+    }
 
     &__scroll_body {
         padding: 0 30px;
@@ -188,6 +197,10 @@ body {
         text-align: center;
         margin-bottom: 40px;
 
+        @media (min-width: $breakpoint) {
+            padding: 0 80px;
+        }
+
         &__info {
             margin-bottom: 10px;
         }
@@ -199,8 +212,15 @@ body {
 
     &__body {
         margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
 
         &__section {
+            
+            @media (min-width: $breakpoint) {
+                width: 50%;
+                box-sizing: border-box;
+            }
 
             &__title {    
                 border-bottom: 1px solid $white;
@@ -226,6 +246,12 @@ body {
 
 .footer {
     margin: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &__impressum {
+        word-break: break-all;
+    }
 }
 
 .icon {
