@@ -12,20 +12,20 @@ window.onload = function () {
 
     if (window.innerWidth <= 768) {
         this.popupHeight = this.popup.offsetHeight;
-        this.popup__scroll_body.style.height = (window.innerHeight - 55) + 'px';
+        this.popup__scroll_body.style.height = (window.innerHeight - 59) + 'px';
     } else {
-        this.popup__scroll_body.style.maxHeight = (window.innerHeight - 55) + 'px';
+        this.popup__scroll_body.style.maxHeight = (window.innerHeight - 59) + 'px';
     }
 }
 
 function showPopup() {
     
-    if (this.popup.open) {
+    if (this.popup.style.visibility === 'visible') {
         if (window.innerWidth <= 768) {
             document.body.style.overflowY = 'auto';
             document.documentElement.style.overflowY = 'auto';
         }
-        this.popup.close();
+        this.popup.style.visibility = 'hidden';
         this.upArrow.classList.add('hidden');
     } else {
         if (window.innerWidth <= 768) {
@@ -33,7 +33,7 @@ function showPopup() {
             document.body.style.overflowY = 'hidden';
         }
 
-        this.popup.show();
+        this.popup.style.visibility = 'visible';
         this.upArrow.classList.remove('hidden');
     }
 } 
