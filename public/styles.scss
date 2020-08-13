@@ -335,7 +335,14 @@ body {
         }
 
         &__title {    
-            font-size: $mobileTitleSize;
+            width: 250px;
+            margin-top: 25px;
+
+            @media (min-width: $breakpoint) {
+                width: 350px;
+                margin-top: 45px;
+                overflow: hidden;
+             }
         }
 
         &__subtitle {    
