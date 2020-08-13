@@ -34,12 +34,9 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
-
-    @media (min-width: $breakpoint) { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__box {
         display: flex;
@@ -91,10 +88,12 @@ body {
         text-align: center;
         font-size: $mobileTitleSize;
         font-weight: bold;
+        width: 250px;
+        margin-top: 35px;
 
         @media (min-width: $breakpoint) { 
             margin-top: 45px;
-            font-size: 100px;
+            width: 400px;
         }
     }
 }
