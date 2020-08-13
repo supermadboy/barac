@@ -12,24 +12,20 @@ window.onload = function () {
 
     if (window.innerWidth <= 768) {
         this.popupHeight = this.popup.offsetHeight;
-        this.popup.style.top = '-' + this.popupHeight + 'px';
         this.popup__scroll_body.style.height = (window.innerHeight - 55) + 'px';
     } else {
         this.popup__scroll_body.style.maxHeight = (window.innerHeight - 55) + 'px';
     }
-
-    this.popup.style.visibility = 'visible';
 }
 
 function showPopup() {
     
-    if (this.popup.classList.contains('visible')) {
+    if (this.popup.open) {
         if (window.innerWidth <= 768) {
             document.body.style.overflowY = 'auto';
             document.documentElement.style.overflowY = 'auto';
         }
-        this.popup.classList.remove('visible');
-        this.popup.style.top = '-' + this.popupHeight + 'px';
+        this.popup.close();
         this.upArrow.classList.add('hidden');
     } else {
         if (window.innerWidth <= 768) {
@@ -37,8 +33,7 @@ function showPopup() {
             document.body.style.overflowY = 'hidden';
         }
 
-        this.popup.classList.add('visible');
+        this.popup.show();
         this.upArrow.classList.remove('hidden');
-        this.popup.style.top = '55px';
     }
 } 
