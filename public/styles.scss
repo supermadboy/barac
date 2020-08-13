@@ -318,7 +318,7 @@ body {
         margin-bottom: 40px;
 
         @media (min-width: $breakpoint) {
-            padding: 0 80px;
+            padding: 0 100px;
         }
 
         &__info {
@@ -327,6 +327,11 @@ body {
 
         &__address {
             color: $yellow;
+
+            @media (min-width: $breakpoint) {
+                display: flex;
+                justify-content: space-evenly;
+            }
         }
     }
 
@@ -335,11 +340,30 @@ body {
         display: flex;
         flex-wrap: wrap;
 
+        @media (min-width: $breakpoint) {
+            margin: 0 50px;
+        }
+
         &__section {
             
             @media (min-width: $breakpoint) {
                 width: 50%;
                 box-sizing: border-box;
+
+                &:first-child {
+                    margin-right: 20px;
+                    width: calc(50% - 20px);
+                }
+    
+                &--full {
+                    width: 100%;
+                }
+
+                &--multiple {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
             }
 
             &__title {    
