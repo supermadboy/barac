@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -8,7 +9,9 @@ module.exports = {
     },
     output: {
       filename: '[name].js',
-      path: __dirname + '/dist'
+      path: __dirname + '/dist',
+      libraryTarget: 'var',
+      library: 'Helpers'
     },
     module: {
         rules: [
@@ -26,15 +29,15 @@ module.exports = {
             ],
           },
           {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            test: /\.(woff(2)?)$/,
             use: [
               {
                 loader: 'file-loader',
                 options: {
                   name: '[name].[ext]',
-                  outputPath: 'fonts/'
+                  outputPath: 'assets/fonts/'
+                    },
                 },
-              },
             ],
           },
         ],
@@ -45,5 +48,13 @@ module.exports = {
             // both options are optional
             filename: '[name].css',
         }),
+        new CopyPlugin({
+            patterns: [
+              { from: 'assets/images', to: 'assets/images' },
+              { from: 'index.html', to: 'index.html' },
+              { from: 'robots.txt', to: 'robots.txt' },
+              { from: 'favicon.ico', to: 'favicon.ico' },
+            ],
+          }),
     ],
   };

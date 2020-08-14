@@ -15,10 +15,6 @@
     &__scroll_body {
         padding: 0 30px;
         overflow: auto;
-
-        @media (min-width: $breakpoint) {
-           overflow: hidden;
-        }
     }
 
     p {

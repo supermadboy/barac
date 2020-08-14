@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
         name="description"        
-        content="barac mannheim ein haus für kunst kultur und künstler."
+        content="Barac ist ein öffentliches, ganzheitliches Gesellschaftskonzept in Mannheim.
+        Ein gemeinnütziger Ort, der Begegung und Kommunikation fördert und kostenlos abwechslungsreiche Veranstaltungen
+        zum kulturellen Austausch bietet:  Aktionen, Ausstellungen zu zeitgenössischer Kunst, Performances, Design und Musik.
+        Regional vernetzt ist Barac mit weiteren öffentlichen Räumen der Kunst, Kultur und Inklusion in der
+        Stadt Mannheim wie beispielweise dem Alter oder dem Einraumhaus."
     >
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="32x32">
+    
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>barac</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="index.js" ></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script async src="main.js" ></script>
 </head>
 <body>
     <header 
@@ -22,7 +33,7 @@
             <p class="header__box__tags">Kunst/Labor/Soziales</p>
             <div 
                 class="header__box__info"
-                onclick="showPopup()"
+                onclick="Helpers.showPopup()"
             >
                 <div class="icon">
                     <div class="down-arrow"></div>
@@ -125,7 +136,7 @@
         </div>
 
         <div class="tag__box">
-            <img class="image__wagon" src="assets/images/foodtruck.gif" alt="Foodtruck von barac vor Alter"/>
+            <img class="image__wagon" src="assets/images/foodtruck_mobile.gif" alt="Foodtruck von barac vor Alter"/>
             <p class="tags">Kunst/Labor/Soziales</p>    
         </div>
 
@@ -139,7 +150,7 @@
             </video>
         </div>
 
-        <img class="image__schalen" src="assets/images/schalen.gif" alt="Die Schalen für die Yufkas"/>
+        <img class="image__schalen" src="assets/images/schalen_mobile.gif" alt="Die Schalen für die Yufkas"/>
         <img class="image__alter_leer" src="assets/images/alter_leer_mobile.jpg" alt="Das Alter an einem ruhigem Tag"/>
         <img class="image__einraumhaus_tor" src="assets/images/einraumhaus_tor_mobile.jpg" alt="Das Einraumhaus mit Installation"/>
 
@@ -168,8 +179,8 @@
                     <img class="image__yufkas" src="assets/images/yufkas_mobile.jpg" alt="Die Yufkas werden im barac foodtruck serviert">
                 </picture>
                 <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/foodtruck.gif">
-                    <img class="image__foodtruck" src="assets/images/foodtruck.gif" alt="Foodtruck von barac vor Alter">
+                    <source media="(min-width:768px)" srcset="assets/images/foodtruck_desktop.gif">
+                    <img class="image__foodtruck" src="assets/images/foodtruck_mobile.gif" alt="Foodtruck von barac vor Alter">
                 </picture>
             </div>
             <div class="body__upper__right">
@@ -212,8 +223,8 @@
             </div>
             <div class="body__lower__right">
                 <picture class="picture__schalen">
-                    <source media="(min-width:768px)" srcset="assets/images/schalen.gif">
-                    <img class="image__schalen" src="assets/images/schalen.gif" alt="Die Schalen für die Yufkas">
+                    <source media="(min-width:768px)" srcset="assets/images/schalen_desktop.gif">
+                    <img class="image__schalen" src="assets/images/schalen_mobile.gif" alt="Die Schalen für die Yufkas">
                 </picture>
                 <picture>
                     <source media="(min-width:768px)" srcset="assets/images/collage_desktop.jpg">

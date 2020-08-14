@@ -10,6 +10,7 @@
     "build": "webpack"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^4.2.1",
     "file-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.10.0",
