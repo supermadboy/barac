@@ -1,0 +1,73 @@
+.mobile__version {
+    margin-top: $mobileTopMargin;
+
+    @media (min-width: $breakpoint) {
+        display: none;
+    }
+
+    img {
+        display: block;
+    }
+
+    .tags {
+        margin-right: 5%;
+        font-size: 18px;
+        text-align: right;    
+        line-height: 11px;
+        letter-spacing: 0.23px;
+    }
+
+    .tag__box {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .image {
+
+        &__gesamtansicht {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+        &__wagon {
+            width: 25%;
+        }
+
+        &__dachwohnung {
+            width: 25%;
+            margin-left: 20%;
+            margin-bottom: 40px;
+        }
+        
+        &__einraumhaus {
+            width: 40%;
+            margin-left: auto;
+            margin-bottom: 20px;
+        }
+        
+        &__schalen {
+            margin-left: 40%;
+            width: 30%;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+
+        &__alter_leer {
+            margin-left: 10%;
+            width: 40%;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        
+        &__einraumhaus_tor {
+            margin-left: 40%;
+            width: 50%;
+            margin-bottom: 40px;
+        }
+    }
+}

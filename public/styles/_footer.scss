@@ -1,0 +1,24 @@
+.footer {
+    margin: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__impressum {
+        display: none;
+        word-break: break-all;
+
+        @media (min-width: $breakpoint) {
+            display: block;
+
+            th {
+                text-align: left;
+            }
+
+            .first__column {
+                padding-right: 10px;
+
+            }
+        }
+    }
+}

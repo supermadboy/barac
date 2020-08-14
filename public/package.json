@@ -1,0 +1,13 @@
+{
+  "name": "barac",
+  "version": "1.0.0",
+  "description": "barac mannheim",
+  "main": "index.js",
+  "author": "markus.szarvas@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

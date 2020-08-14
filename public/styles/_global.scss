@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    font-family: 'Lyyra Extended';
+}
+
+body {
+    position: absolute;
+
+    
+    @media (min-width: $breakpoint) { 
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.yellow {
+    color: $yellow
+}

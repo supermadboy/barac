@@ -1,0 +1,68 @@
+.header {
+    height: $mobileTopMargin;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__box {
+        display: flex;
+        justify-content: center;
+    
+        @media (min-width: $breakpoint) { 
+            justify-content: space-between;
+            width: 100%;
+        }
+    
+        &__tags {
+            display: none;
+    
+            @media (min-width: $breakpoint) { 
+                display: block;
+                width: 350px;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+        }
+    
+        &__info {
+            width: 90px;
+            height: 47px;
+            background-color: $yellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 0;
+            cursor: pointer;
+        }
+    
+        &__address {
+            display: none;
+    
+            @media (min-width: $breakpoint) { 
+                display: block;
+                width: 350px;
+                text-align: right;
+                word-break: break-all;
+                margin-right: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: $mobileTitleSize;
+        font-weight: bold;
+        width: 250px;
+        margin-top: 35px;
+
+        @media (min-width: $breakpoint) { 
+            margin-top: 45px;
+            width: 400px;
+        }
+    }
+}

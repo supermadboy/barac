@@ -1,0 +1,126 @@
+.desktop__version {
+    display: none;
+    margin-top: 220px;
+    margin-bottom: 50px;
+
+    @media (min-width: $breakpoint) {
+        display: block;
+    }
+
+    .body__upper,
+    .body__lower {
+        display: flex;
+        flex: 1;
+    }
+
+    
+    .tags {
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 50%;
+    }
+
+    .body__upper {
+
+        &__right {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .picture {
+            
+            &__einraumhaus {
+                text-align: right;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+        
+        .image {
+
+            &__gesamtansicht {
+                width: 80%;
+                margin-bottom: 60px;
+                margin-bottom: 10%;
+            }
+
+            &__yufkas {
+                width: 20%;
+            }
+
+            &__foodtruck {
+                width: 35%;
+                margin-bottom: 100px;
+                margin-left: 100px;
+            }
+
+            &__dachwohnung {
+                width: 60%;
+                margin-top: 55%;
+                margin-left: 10%;
+            }
+
+            &__einraumhaus {
+                width: 90%;
+            }
+        }
+    }
+
+    .body__lower {
+
+        &__left,
+        &__right {
+            width: 50%;
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+
+            .picture__alter_leer {
+                text-align: right;
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+
+            .picture__schalen,
+            .picture__alter {
+                text-align: right;
+            }
+        }
+
+        .image {
+
+            &__alter_leer {
+                width: 45%;
+                margin-bottom: 70px;     
+                margin-top: 90px;
+            }
+
+            &__einraumhaus_tor {
+                width: 50%;
+                margin-left: 15%;
+            }
+
+            &__schalen {
+                width: 20%;
+                margin-right: 15%;
+                margin-bottom: 100px;
+            }
+
+            &__collage {
+                width: 25%;
+                margin-left: 5%;
+                margin-bottom: 70px;
+            }
+
+            &__alter {
+                width: 55%;
+            }
+        }
+    }
+}
