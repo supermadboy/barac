@@ -13,6 +13,9 @@ module.exports = {
       libraryTarget: 'var',
       library: 'Helpers'
     },
+    devServer: {
+        contentBase: './dist',
+    },
     module: {
         rules: [
           {
