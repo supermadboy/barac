@@ -1,12 +1,4 @@
-$breakpoint: 768px;
-$yellow: #FFFF00;
-$black: #000000;
-$white: #FFFFFF;
-$mobileTopMargin: 200px;
-
-$mobileTitleSize: 80px;
-
-@import '../assets/fonts/fonts.css';
+//@import '../assets/fonts/fonts.css';
 @import './global';
 @import './header';
 @import './mobile';

@@ -2,11 +2,19 @@
   "name": "barac",
   "version": "1.0.0",
   "description": "barac mannheim",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "markus.szarvas@gmail.com",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "webpack"
+  },
   "devDependencies": {
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   }
