@@ -1,3 +1,6 @@
-pscp -r -P 2012 Desktop\Project\barac\public\* pi@raspberrypi.local:barac/ 
+pscp -r -P 2012 Desktop\Project\barac\public\dist* pi@raspberrypi.local:barac/ 
+rm -R /var/www/html/barac.supermittel.com/*
+mv barac/dist/* /var/www/html/barac.supermittel.com/
+
 sass --watch styles.scss index.css --style compressed --no-source-map
 uglifyjs script.js -o index.js -c

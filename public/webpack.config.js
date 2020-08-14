@@ -40,6 +40,18 @@ module.exports = {
                 },
             ],
           },
+          {
+            test: /\.(png)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'assets/images/'
+                    },
+                },
+            ],
+          },
         ],
       },
     plugins: [
