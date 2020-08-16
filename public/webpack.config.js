@@ -28,6 +28,8 @@ module.exports = {
                 },
                 // Translates CSS into CommonJS
                 'css-loader',
+                // Translates CSS into CommonJS
+                'postcss-loader',
                 // Compiles Sass to CSS
                 'sass-loader',
             ],
