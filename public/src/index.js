@@ -1,9 +1,9 @@
 function showPopup() {
-    popup =  document.getElementById('popup');
-    popup__scroll_body = document.getElementById('popup__scroll_body');
-    upArrow = document.getElementById('up-arrow');
+    var popup =  document.getElementById('popup');
+    var popup__scroll_body = document.getElementById('popup__scroll_body');
+    var upArrow = document.getElementById('up-arrow');
 
-    dekstopAndBigEnough = window.innerWidth > 768 && window.innerHeight > popup.offsetHeight;
+    var dekstopAndBigEnough = window.innerWidth > 768 && window.innerHeight > popup.offsetHeight;
 
     if (dekstopAndBigEnough) {
         popup__scroll_body.style.maxHeight = (window.innerHeight - 59) + 'px';

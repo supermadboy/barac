@@ -1,63 +1,61 @@
 .icon {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    .down-arrow,
-    .up-arrow {
-        border: solid black;
-        display: inline-block;
-        padding: 5px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        width: 0;
+  .down-arrow,
+  .up-arrow {
+    border: solid black;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    width: 0;
+  }
+
+  .down-arrow {
+    border-width: 0 2px 2px 0;
+  }
+
+  .up-arrow {
+    border-width: 2px 0 0 2px;
+    margin-top: 2px;
+    transition: margin ease-out 1s, padding ease-out 1s, visibility step-start 1s;
+    visibility: visible;
+
+    &.hidden {
+      margin-left: 5px;
+      padding: 0;
+      transition: margin ease-out 1s, padding ease-out 1s, visibility step-end 1s;
+      visibility: hidden;
     }
-
-    .down-arrow {
-        border-width: 0 2px 2px 0;
-    }
-
-    .up-arrow {
-        border-width: 2px 0 0 2px;
-        margin-top: 2px;
-        visibility: visible;
-        transition: margin ease-out 1s, padding ease-out 1s, visibility step-start 1s;
-
-        &.hidden {
-            padding: 0px;
-            margin-left: 5px;
-            visibility: hidden;
-            transition: margin ease-out 1s, padding ease-out 1s, visibility step-end 1s;
-        }
-    }
+  }
 
 }
 
 .bubble {
-    display: flex;
-    align-items: flex-start;
+  align-items: flex-start;
+  display: flex;
 
-    &--end {
-        justify-content: flex-end;
-    }
+  &--end {
+    justify-content: flex-end;
+  }
 
-    &--flipped {
-
-        .video {
-            transform: rotate(180deg);
-        }
-    }
-
+  &--flipped {
     .video {
-        width: 50%;
-
-        @media (min-width: $breakpoint) {
-            width: 30%;
-        }
-
-        &--second {
-            width: 20%;
-            margin-top: 104px;
-            margin-left: 30%;
-        }
+      transform: rotate(180deg);
     }
+  }
+
+  .video {
+    width: 50%;
+
+    @media (min-width: $breakpoint) {
+      width: 30%;
+    }
+
+    &--second {
+      margin-left: 30%;
+      margin-top: 104px;
+      width: 20%;
+    }
+  }
 }

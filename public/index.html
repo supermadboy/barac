@@ -1,274 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="description"        
-        content="Barac ist ein öffentliches, ganzheitliches Gesellschaftskonzept in Mannheim.
-        Ein gemeinnütziger Ort, der Begegung und Kommunikation fördert und kostenlos abwechslungsreiche Veranstaltungen
-        zum kulturellen Austausch bietet:  Aktionen, Ausstellungen zu zeitgenössischer Kunst, Performances, Design und Musik.
-        Regional vernetzt ist Barac mit weiteren öffentlichen Räumen der Kunst, Kultur und Inklusion in der
-        Stadt Mannheim wie beispielweise dem Alter oder dem Einraumhaus."
-    >
-    
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"    
+    content="Barac ist ein öffentliches, ganzheitliches Gesellschaftskonzept in Mannheim.
+    Ein gemeinnütziger Ort, der Begegung und Kommunikation fördert und kostenlos abwechslungsreiche Veranstaltungen
+    zum kulturellen Austausch bietet: Aktionen, Ausstellungen zu zeitgenössischer Kunst, Performances, Design und Musik.
+    Regional vernetzt ist Barac mit weiteren öffentlichen Räumen der Kunst, Kultur und Inklusion in der
+    Stadt Mannheim wie beispielweise dem Alter oder dem Einraumhaus."
+  >
+  
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+  <link rel="mask-icon" href="assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <title>barac</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script async src="main.js" ></script>
+  <title>barac</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script async src="main.js" ></script>
 </head>
 <body>
-    <header 
-        class="header"
-        id="header"
+  <header 
+    class="header"
+    id="header"
+  >
+    <div class="header__box">
+      <p class="header__box__tags">Kunst/Labor/Soziales</p>
+      <div 
+        class="header__box__info"
+        onclick="Helpers.showPopup()"
+      >
+        <div class="icon">
+          <div class="down-arrow"></div>
+          <div id="up-arrow" class="up-arrow hidden"></div>
+        </div>
+        <p class="header__box__info--text">Info</p>
+      </div>
+      <p class="header__box__address">George-Sulivan-Ring 61/63/65/67/69</p>
+    </div>
+    
+    <div
+      class="popup"
+      id="popup"
     >
-        <div class="header__box">
-            <p class="header__box__tags">Kunst/Labor/Soziales</p>
-            <div 
-                class="header__box__info"
-                onclick="Helpers.showPopup()"
-            >
-                <div class="icon">
-                    <div class="down-arrow"></div>
-                    <div id="up-arrow" class="up-arrow hidden"></div>
-                </div>
-                <p class="header__box__info--text">Info</p>
-            </div>
-            <p class="header__box__address">George-Sulivan-Ring 61/63/65/67/69</p>
+      <div
+        class="popup__scroll_body"
+        id="popup__scroll_body"
+      >
+        <div class="popup__header">
+          <svg class="popup__header__title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 415.43 79.6"><defs><style>.d {fill: none;}.e {clip-path: url(#a);}.f {fill: #fff;}
+</style><clipPath id="d" transform="translate(-6.29 -10.2)"><rect class="d" x="-2.71" y="3.2" width="433.43" height="87.6"/></clipPath></defs><g class="e"><path class="f" d="M386.63,89.68c12.08,0,22.55-2,35.08-5.06V68.86l-12.53,3.22a88.5,88.5,0,0,1-23,3c-13.69,0-20.36-4.61-20.36-12.89,0-8.51,6.79-12.88,20.36-12.88,9,0,17,1.84,24.27,3.68l11.27,2.88V40.22C409.18,36.89,398,34.7,385.83,34.7c-23.12,0-38,9-38,27.49s14.61,27.49,38.76,27.49m-99.95-11.5c-7.94,0-11.85-1.61-11.85-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.27,16.33M281.5,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.84,1.73-43.48,5.64V54.6l11.5-2.53c11.05-2.41,24.39-4.26,33.94-4.26,7.24,0,10.69,1,10.69,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8.05,14.49,23.58,14.49M195,88.53H213V65L224.33,57c7.6-5.29,13-6.33,18.18-6.33a27.76,27.76,0,0,1,10,1.73L256.66,54V36.54a34.65,34.65,0,0,0-10.82-1.84c-10,0-17.14,4.37-33.81,16.8.23-5.76.34-9.78.34-15.65H195ZM130.7,78.18c-7.93,0-11.84-1.61-11.84-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.28,16.33M125.53,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.85,1.73-43.48,5.64V54.6l11.5-2.53c11-2.41,24.39-4.26,33.93-4.26,7.25,0,10.7,1,10.7,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8,14.49,23.58,14.49M63.68,75.42c-5.63,0-12-1.84-26.11-7.25l-15.3-6,15.3-6C51.83,50.92,58.05,49,63.68,49c9.66,0,14.38,4.6,14.38,13.22S73.34,75.42,63.68,75.42m5.75,14.26c16.45,0,26.46-10.12,26.46-27.49S85.88,34.7,69.78,34.7c-10.47,0-21.86,3.45-45.55,13.57V10.2H6.29V88.53H23.65c0-5.86-.11-8.16-.34-12.76,26.8,11.15,36.46,13.91,46.12,13.91" transform="translate(-6.29 -10.2)"/></g></svg>
+          <p class="popup__header__subtitle">ist</p>
+          <p class="popup__header__subtitle">Kunst/Labor/Soziales</p>
         </div>
-
-        <div
-            class="popup"
-            id="popup"
-        >
-            <div
-                class="popup__scroll_body"
-                id="popup__scroll_body"
-            >
-                <div class="popup__header">
-                    <svg class="popup__header__title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 415.43 79.6"><defs><style>.d{fill:none;}.e{clip-path:url(#a);}.f{fill:#fff;}</style><clipPath id="d" transform="translate(-6.29 -10.2)"><rect class="d" x="-2.71" y="3.2" width="433.43" height="87.6"/></clipPath></defs><g class="e"><path class="f" d="M386.63,89.68c12.08,0,22.55-2,35.08-5.06V68.86l-12.53,3.22a88.5,88.5,0,0,1-23,3c-13.69,0-20.36-4.61-20.36-12.89,0-8.51,6.79-12.88,20.36-12.88,9,0,17,1.84,24.27,3.68l11.27,2.88V40.22C409.18,36.89,398,34.7,385.83,34.7c-23.12,0-38,9-38,27.49s14.61,27.49,38.76,27.49m-99.95-11.5c-7.94,0-11.85-1.61-11.85-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.27,16.33M281.5,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.84,1.73-43.48,5.64V54.6l11.5-2.53c11.05-2.41,24.39-4.26,33.94-4.26,7.24,0,10.69,1,10.69,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8.05,14.49,23.58,14.49M195,88.53H213V65L224.33,57c7.6-5.29,13-6.33,18.18-6.33a27.76,27.76,0,0,1,10,1.73L256.66,54V36.54a34.65,34.65,0,0,0-10.82-1.84c-10,0-17.14,4.37-33.81,16.8.23-5.76.34-9.78.34-15.65H195ZM130.7,78.18c-7.93,0-11.84-1.61-11.84-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.28,16.33M125.53,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.85,1.73-43.48,5.64V54.6l11.5-2.53c11-2.41,24.39-4.26,33.93-4.26,7.25,0,10.7,1,10.7,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8,14.49,23.58,14.49M63.68,75.42c-5.63,0-12-1.84-26.11-7.25l-15.3-6,15.3-6C51.83,50.92,58.05,49,63.68,49c9.66,0,14.38,4.6,14.38,13.22S73.34,75.42,63.68,75.42m5.75,14.26c16.45,0,26.46-10.12,26.46-27.49S85.88,34.7,69.78,34.7c-10.47,0-21.86,3.45-45.55,13.57V10.2H6.29V88.53H23.65c0-5.86-.11-8.16-.34-12.76,26.8,11.15,36.46,13.91,46.12,13.91" transform="translate(-6.29 -10.2)"/></g></svg>
-                    <p class="popup__header__subtitle">ist</p>
-                    <p class="popup__header__subtitle">Kunst/Labor/Soziales</p>
-                </div>
-            
-                <div class="popup__subheader">
-                    <p class="popup__subheader__info">Gebäude, Fundament, Ausstellungsfläche, ganzheitliches Gesellschaftskonzept, inklusives Wohnen, Kunstlabor, Farblabor, Erdlabor, Küchenlabor…</p>
-                    <div class="popup__subheader__address">
-                        <p>Franklin</p>
-                        <p>George-Sullivan-Ring 61/63/65/67/69</p>
-                        <p>Haltestelle: Platz der Freundschaft</p>
-                    </div>
-                </div>
-
-                <div class="popup__body">
-                    <div class="popup__body__section">
-                        <h3 class="popup__body__section__title">Eröffnungswochenende 1</h3>
-                        <h3 class="popup__body__section__subtitle">04.09. – ab 18 Uhr</h3>
-                        <p class="popup__body__section__subtitle">Performance: Ianas Gang In Die Unterwelt</p>
-                        <p class="popup__body__section__text">
-                            Julla Kroner                    
-                        </p>
-                        <br />
-                        <h3 class="popup__body__section__subtitle">05.09. – ab 16 Uhr</h3>
-                        <p class="popup__body__section__subtitle">Performance: Off The Grid II</p>
-                        <p class="popup__body__section__text">
-                            Helen Weber/Fabian Widukind Penzkofer/Kai Fischer                    
-                        </p>
-                        <br />
-                        <h3 class="popup__body__section__subtitle">06.09. – ab 15 Uhr</h3>
-                        <br />
-                    </div>
-                    <div class="popup__body__section popup__body__section--multiple">
-                        <div>
-                            <h3 class="popup__body__section__title">Eröffnungswochenende 2</h3>
-                            <h3 class="popup__body__section__subtitle">11.09. – ab 18 Uhr</h3>
-                            <br />
-                            <h3 class="popup__body__section__subtitle">12.09. – ab 16 Uhr</h3>
-                            <br />
-                            <h3 class="popup__body__section__subtitle">13.09. – ab 15 Uhr</h3>
-                            <br />
-                        </div>
-                        
-                        <div>
-                            <h3 class="popup__body__section__title">Musik</h3>
-                            <p class="popup__body__section__text">
-                                an beiden Wochenenden: Nojoke Radio                    
-                            </p>
-                            <br />
-                        </div>
-                    </div>
-                    <div class="popup__body__section popup__body__section--full">
-                        <h3 class="popup__body__section__title">Ausstellung</h3>
-                        <p class="popup__body__section__text">
-                            Myriam Holme, Philipp Morlock, Jörg Gelbke, Anna Schwehr, Julla Kroner, Cynthia Wijono, Sara Wieckenberg, Thai Tai Pham, Jan Läkemäker, Martin Pöll, Nicholas Frotscher, Jonathan Dögler, Jonathan Mink, Tamara Goehringe, Paulina Lange, Hyein Kim, Michelle Mousavi, Alina Wittig, Maximilian Martinez, Laura Sacher, Marie Schönheiter, Soma Mizutani
-                        </p>
-                        
-                        <br />
-                    </div>
-                </div>
-
-                <div class="popup__footer">
-                    <p class="yellow">Es gelten die Corona-Maßnahmen des Landes Baden-Württemberg. Sofern ein Abstand von 1,5 Metern nicht eingehalten werden kann, tragen Sie bitte eine Mund-Nasen-Bedeckung.</p>
-                    <br />
-
-                    <p>more infos about barac coming soon, for newsletter mail to:</p>
-                    <h4>people@barac-mannheim.de</h4>
-                </div>
-            </div>
-        </div>
-        <svg class="header__title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 415.43 79.6"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{fill:#000;}</style><clipPath id="a" transform="translate(-6.29 -10.2)"><rect class="a" x="-2.71" y="3.2" width="433.43" height="87.6"/></clipPath></defs><g class="b"><path class="c" d="M386.63,89.68c12.08,0,22.55-2,35.08-5.06V68.86l-12.53,3.22a88.5,88.5,0,0,1-23,3c-13.69,0-20.36-4.61-20.36-12.89,0-8.51,6.79-12.88,20.36-12.88,9,0,17,1.84,24.27,3.68l11.27,2.88V40.22C409.18,36.89,398,34.7,385.83,34.7c-23.12,0-38,9-38,27.49s14.61,27.49,38.76,27.49m-99.95-11.5c-7.94,0-11.85-1.61-11.85-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.27,16.33M281.5,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.84,1.73-43.48,5.64V54.6l11.5-2.53c11.05-2.41,24.39-4.26,33.94-4.26,7.24,0,10.69,1,10.69,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8.05,14.49,23.58,14.49M195,88.53H213V65L224.33,57c7.6-5.29,13-6.33,18.18-6.33a27.76,27.76,0,0,1,10,1.73L256.66,54V36.54a34.65,34.65,0,0,0-10.82-1.84c-10,0-17.14,4.37-33.81,16.8.23-5.76.34-9.78.34-15.65H195ZM130.7,78.18c-7.93,0-11.84-1.61-11.84-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.28,16.33M125.53,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.85,1.73-43.48,5.64V54.6l11.5-2.53c11-2.41,24.39-4.26,33.93-4.26,7.25,0,10.7,1,10.7,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8,14.49,23.58,14.49M63.68,75.42c-5.63,0-12-1.84-26.11-7.25l-15.3-6,15.3-6C51.83,50.92,58.05,49,63.68,49c9.66,0,14.38,4.6,14.38,13.22S73.34,75.42,63.68,75.42m5.75,14.26c16.45,0,26.46-10.12,26.46-27.49S85.88,34.7,69.78,34.7c-10.47,0-21.86,3.45-45.55,13.57V10.2H6.29V88.53H23.65c0-5.86-.11-8.16-.34-12.76,26.8,11.15,36.46,13.91,46.12,13.91" transform="translate(-6.29 -10.2)"/></g></svg>
-    </header>
-    <div class="mobile__version">
-        <img class="image__gesamtansicht" src="assets/images/gesamtansicht_mobile.jpg" alt="Barac Gesamtansicht"/>
-
-        <div class="bubble bubble--flipped">
-            <video class="video" autoplay loop playsinline muted>
-                <source src="assets/images/MitAlphakanal.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/MitAlphakanal.webm" type="video/webm"  alt="Style"/>
-            </video>
-        </div>
-
-        <div class="tag__box">
-            <img class="image__wagon" src="assets/images/foodtruck_mobile.gif" alt="Foodtruck von barac vor Alter"/>
-            <p class="tags">Kunst/Labor/Soziales</p>    
-        </div>
-
-        <img class="image__dachwohnung" src="assets/images/dachwohnung_mobile.jpg" alt="Eine Dachwohnung im barac"/>
-        <img class="image__einraumhaus" src="assets/images/einraumhaus_mobile.jpg" alt="Das Einraumhaus in Mannheim"/>
-
-        <div class="bubble bubble--end">
-            <video class="video" autoplay loop playsinline muted>
-                <source src="assets/images/MitAlphakanal.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/MitAlphakanal.webm" type="video/webm"  alt="Style"/>
-            </video>
-        </div>
-
-        <img class="image__schalen" src="assets/images/schalen_mobile.gif" alt="Die Schalen für die Yufkas"/>
-        <img class="image__alter_leer" src="assets/images/alter_leer_mobile.jpg" alt="Das Alter an einem ruhigem Tag"/>
-        <img class="image__einraumhaus_tor" src="assets/images/einraumhaus_tor_mobile.jpg" alt="Das Einraumhaus mit Installation"/>
-
-        <div class="bubble bubble--flipped">
-            <video class="video" autoplay loop playsinline muted>
-                <source src="assets/images/MitAlphakanal.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/MitAlphakanal.webm" type="video/webm"  alt="Style"/>
-            </video>
-        </div>
-    </div>
-    <div class="desktop__version">
-        <div class="bubble bubble--end">
-            <video class="video" autoplay loop playsinline muted>
-                <source src="assets/images/MitAlphakanal.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/MitAlphakanal.webm" type="video/webm"  alt="Style"/>
-            </video>
-        </div>
-        <div class="body__upper">
-            <div class="body__upper__left">
-                <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/gesamtansicht_desktop.jpg">
-                    <img class="image__gesamtansicht" src="assets/images/gesamtansicht_mobile.jpg" alt="Barac Gesamtansicht">
-                </picture>
-                <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/yufkas_desktop.jpg">
-                    <img class="image__yufkas" src="assets/images/yufkas_mobile.jpg" alt="Die Yufkas werden im barac foodtruck serviert">
-                </picture>
-                <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/foodtruck_desktop.gif">
-                    <img class="image__foodtruck" src="assets/images/foodtruck_mobile.gif" alt="Foodtruck von barac vor Alter">
-                </picture>
-            </div>
-            <div class="body__upper__right">
-                <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/dachwohnung_desktop.jpg">
-                    <img class="image__dachwohnung" src="assets/images/dachwohnung_mobile.jpg" alt="Eine Dachwohnung im barac">
-                </picture>
-                <div class="picture__einraumhaus">
-                    <picture>
-                        <source media="(min-width:768px)" srcset="assets/images/einraumhaus_desktop.jpg">
-                        <img class="image__einraumhaus" src="assets/images/einraumhaus_mobile.jpg" alt="Das Einraumhaus in Mannheim">
-                    </picture>
-                </div>
-            </div>
-        </div>
-        <p class="tags">Kunst/Labor/Soziales</p>
-
-        <div class="bubble bubble--flipped">
-            <video class="video" autoplay loop playsinline muted>
-                <source src="assets/images/MitAlphakanal.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/MitAlphakanal.webm" type="video/webm"  alt="Style"/>
-            </video>
-
-            <video class="video video--second" autoplay loop playsinline muted>
-                <source src="assets/images/zweiKugeln.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/zweiKugeln.webm" type="video/webm"  alt="Style"/>
-            </video>
-        </div>
-
-        <div class="body__lower">
-            <div class="body__lower__left">
-                <picture class="picture__alter_leer">
-                    <source media="(min-width:768px)" srcset="assets/images/alter_leer_desktop.jpg">
-                    <img class="image__alter_leer" src="assets/images/alter_leer_mobile.jpg" alt="Das Alter an einem ruhigem Tag">
-                </picture>
-                <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/einraumhaus_tor_desktop.jpg">
-                    <img class="image__einraumhaus_tor" src="assets/images/einraumhaus_tor_mobile.jpg" alt="Das Einraumhaus mit Installation">
-                </picture>
-            </div>
-            <div class="body__lower__right">
-                <picture class="picture__schalen">
-                    <source media="(min-width:768px)" srcset="assets/images/schalen_desktop.gif">
-                    <img class="image__schalen" src="assets/images/schalen_mobile.gif" alt="Die Schalen für die Yufkas">
-                </picture>
-                <picture>
-                    <source media="(min-width:768px)" srcset="assets/images/collage_desktop.jpg">
-                    <img class="image__collage" src="assets/images/collage_mobile.jpg" alt="Eine collage über das einraumhaus">
-                </picture>
-                <picture class="picture__alter">
-                    <source media="(min-width:768px)" srcset="assets/images/alter_desktop.jpg">
-                    <img class="image__alter" src="assets/images/alter_mobile.jpg" alt="Das Alter im normalen Zustand">
-                </picture>
-            </div>
-        </div>
-
-        <div class="bubble bubble--flipped">
-            <video class="video" autoplay loop playsinline muted>
-                <source src="assets/images/MitAlphakanal.mp4" type="video/mp4"  alt="Style"/>
-                <source src="assets/images/MitAlphakanal.webm" type="video/webm"  alt="Style"/>
-            </video>
-        </div>
-    </div>
-    </div>
-
-    <footer class="footer">
-        <div>
-            <p>Franklin – George-Sullivan-Ring 61/63/65/67/69 – Mannheim</p>
+      
+        <div class="popup__subheader">
+          <p class="popup__subheader__info">Gebäude, Fundament, Ausstellungsfläche, ganzheitliches Gesellschaftskonzept, inklusives Wohnen, Kunstlabor, Farblabor, Erdlabor, Küchenlabor…</p>
+          <div class="popup__subheader__address">
+            <p>Franklin</p>
+            <p>George-Sullivan-Ring 61/63/65/67/69</p>
             <p>Haltestelle: Platz der Freundschaft</p>
-            <p>people@barac-mannheim.de</p>
+          </div>
         </div>
-        
-        <div class="footer__impressum">
-            <table>
-                <tr>
-                    <th class="first__column">Einraumhaus-Förderverein e.V.</th>
-                    <th>barac GmbH</th>
-                </tr>
-                <tr>
-                    <td>Myriam Holme</td>
-                    <td>Philipp Morlock</td>
-                </tr>
-                <tr>
-                    <td>Philipp Morlock</td>
-                    <td>Andreas Handel</td>
-                </tr>
-              </table>
+
+        <div class="popup__body">
+          <div class="popup__body__section">
+            <h3 class="popup__body__section__title">Eröffnungswochenende 1</h3>
+            <h3 class="popup__body__section__subtitle">04.09. – ab 18 Uhr</h3>
+            <p class="popup__body__section__subtitle">Performance: Ianas Gang In Die Unterwelt</p>
+            <p class="popup__body__section__text">
+              Julla Kroner          
+            </p>
+            <br />
+            <h3 class="popup__body__section__subtitle">05.09. – ab 16 Uhr</h3>
+            <p class="popup__body__section__subtitle">Performance: Off The Grid II</p>
+            <p class="popup__body__section__text">
+              Helen Weber/Fabian Widukind Penzkofer/Kai Fischer          
+            </p>
+            <br />
+            <h3 class="popup__body__section__subtitle">06.09. – ab 15 Uhr</h3>
+            <br />
+          </div>
+          <div class="popup__body__section popup__body__section--multiple">
+            <div>
+              <h3 class="popup__body__section__title">Eröffnungswochenende 2</h3>
+              <h3 class="popup__body__section__subtitle">11.09. – ab 18 Uhr</h3>
+              <br />
+              <h3 class="popup__body__section__subtitle">12.09. – ab 16 Uhr</h3>
+              <br />
+              <h3 class="popup__body__section__subtitle">13.09. – ab 15 Uhr</h3>
+              <br />
+            </div>
+            
+            <div>
+              <h3 class="popup__body__section__title">Musik</h3>
+              <p class="popup__body__section__text">
+                an beiden Wochenenden: Nojoke Radio          
+              </p>
+              <br />
+            </div>
+          </div>
+          <div class="popup__body__section popup__body__section--full">
+            <h3 class="popup__body__section__title">Ausstellung</h3>
+            <p class="popup__body__section__text">
+              Myriam Holme, Philipp Morlock, Jörg Gelbke, Anna Schwehr, Julla Kroner, Cynthia Wijono, Sara Wieckenberg, Thai Tai Pham, Jan Läkemäker, Martin Pöll, Nicholas Frotscher, Jonathan Dögler, Jonathan Mink, Tamara Goehringe, Paulina Lange, Hyein Kim, Michelle Mousavi, Alina Wittig, Maximilian Martinez, Laura Sacher, Marie Schönheiter, Soma Mizutani
+            </p>
+            
+            <br />
+          </div>
         </div>
-    </footer>
+
+        <div class="popup__footer">
+          <p class="yellow">Es gelten die Corona-Maßnahmen des Landes Baden-Württemberg. Sofern ein Abstand von 1,5 Metern nicht eingehalten werden kann, tragen Sie bitte eine Mund-Nasen-Bedeckung.</p>
+          <br />
+
+          <p>more infos about barac coming soon, for newsletter mail to:</p>
+          <h4>people@barac-mannheim.de</h4>
+        </div>
+      </div>
+    </div>
+    <svg class="header__title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 415.43 79.6"><defs><style>.a {fill: none;}.b {clip-path: url(#a);}.c {fill: #000;}
+</style><clipPath id="a" transform="translate(-6.29 -10.2)"><rect class="a" x="-2.71" y="3.2" width="433.43" height="87.6"/></clipPath></defs><g class="b"><path class="c" d="M386.63,89.68c12.08,0,22.55-2,35.08-5.06V68.86l-12.53,3.22a88.5,88.5,0,0,1-23,3c-13.69,0-20.36-4.61-20.36-12.89,0-8.51,6.79-12.88,20.36-12.88,9,0,17,1.84,24.27,3.68l11.27,2.88V40.22C409.18,36.89,398,34.7,385.83,34.7c-23.12,0-38,9-38,27.49s14.61,27.49,38.76,27.49m-99.95-11.5c-7.94,0-11.85-1.61-11.85-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.27,16.33M281.5,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.84,1.73-43.48,5.64V54.6l11.5-2.53c11.05-2.41,24.39-4.26,33.94-4.26,7.24,0,10.69,1,10.69,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8.05,14.49,23.58,14.49M195,88.53H213V65L224.33,57c7.6-5.29,13-6.33,18.18-6.33a27.76,27.76,0,0,1,10,1.73L256.66,54V36.54a34.65,34.65,0,0,0-10.82-1.84c-10,0-17.14,4.37-33.81,16.8.23-5.76.34-9.78.34-15.65H195ZM130.7,78.18c-7.93,0-11.84-1.61-11.84-4.94,0-2.65,2.41-3.92,9.66-4.95l26.8-3.91c4.37-.69,8.17-2,9.66-3.22v.69c0,8.62-16.45,16.33-34.28,16.33M125.53,89.8c16.45,0,32.55-5.18,40-14.15-.23,3.57-.35,8.4-.58,12.88h16.57V52.3c0-12.31-8.4-17.6-29.22-17.6-12,0-24.85,1.73-43.48,5.64V54.6l11.5-2.53c11-2.41,24.39-4.26,33.93-4.26,7.25,0,10.7,1,10.7,2.88s-1.61,2.42-6.21,3.11l-31.4,4.48c-17.48,2.53-25.42,7.36-25.42,17,0,9.31,8,14.49,23.58,14.49M63.68,75.42c-5.63,0-12-1.84-26.11-7.25l-15.3-6,15.3-6C51.83,50.92,58.05,49,63.68,49c9.66,0,14.38,4.6,14.38,13.22S73.34,75.42,63.68,75.42m5.75,14.26c16.45,0,26.46-10.12,26.46-27.49S85.88,34.7,69.78,34.7c-10.47,0-21.86,3.45-45.55,13.57V10.2H6.29V88.53H23.65c0-5.86-.11-8.16-.34-12.76,26.8,11.15,36.46,13.91,46.12,13.91" transform="translate(-6.29 -10.2)"/></g></svg>
+  </header>
+  <div class="mobile__version">
+    <img class="image__gesamtansicht" src="assets/images/gesamtansicht_mobile.jpg" alt="Barac Gesamtansicht"/>
+
+    <div class="bubble bubble--flipped">
+      <video class="video" autoplay loop playsinline muted>
+        <source src="assets/images/MitAlphakanal.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/MitAlphakanal.webm" type="video/webm" alt="Style"/>
+      </video>
+    </div>
+
+    <div class="tag__box">
+      <img class="image__wagon" src="assets/images/foodtruck_mobile.gif" alt="Foodtruck von barac vor Alter"/>
+      <p class="tags">Kunst/Labor/Soziales</p>  
+    </div>
+
+    <img class="image__dachwohnung" src="assets/images/dachwohnung_mobile.jpg" alt="Eine Dachwohnung im barac"/>
+    <img class="image__einraumhaus" src="assets/images/einraumhaus_mobile.jpg" alt="Das Einraumhaus in Mannheim"/>
+
+    <div class="bubble bubble--end">
+      <video class="video" autoplay loop playsinline muted>
+        <source src="assets/images/MitAlphakanal.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/MitAlphakanal.webm" type="video/webm" alt="Style"/>
+      </video>
+    </div>
+
+    <img class="image__schalen" src="assets/images/schalen_mobile.gif" alt="Die Schalen für die Yufkas"/>
+    <img class="image__alter_leer" src="assets/images/alter_leer_mobile.jpg" alt="Das Alter an einem ruhigem Tag"/>
+    <img class="image__einraumhaus_tor" src="assets/images/einraumhaus_tor_mobile.jpg" alt="Das Einraumhaus mit Installation"/>
+
+    <div class="bubble bubble--flipped">
+      <video class="video" autoplay loop playsinline muted>
+        <source src="assets/images/MitAlphakanal.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/MitAlphakanal.webm" type="video/webm" alt="Style"/>
+      </video>
+    </div>
+  </div>
+  <div class="desktop__version">
+    <div class="bubble bubble--end">
+      <video class="video" autoplay loop playsinline muted>
+        <source src="assets/images/MitAlphakanal.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/MitAlphakanal.webm" type="video/webm" alt="Style"/>
+      </video>
+    </div>
+    <div class="body__upper">
+      <div class="body__upper__left">
+        <picture>
+          <source media="(min-width:768px)" srcset="assets/images/gesamtansicht_desktop.jpg">
+          <img class="image__gesamtansicht" src="assets/images/gesamtansicht_mobile.jpg" alt="Barac Gesamtansicht">
+        </picture>
+        <picture>
+          <source media="(min-width:768px)" srcset="assets/images/yufkas_desktop.jpg">
+          <img class="image__yufkas" src="assets/images/yufkas_mobile.jpg" alt="Die Yufkas werden im barac foodtruck serviert">
+        </picture>
+        <picture>
+          <source media="(min-width:768px)" srcset="assets/images/foodtruck_desktop.gif">
+          <img class="image__foodtruck" src="assets/images/foodtruck_mobile.gif" alt="Foodtruck von barac vor Alter">
+        </picture>
+      </div>
+      <div class="body__upper__right">
+        <picture>
+          <source media="(min-width:768px)" srcset="assets/images/dachwohnung_desktop.jpg">
+          <img class="image__dachwohnung" src="assets/images/dachwohnung_mobile.jpg" alt="Eine Dachwohnung im barac">
+        </picture>
+        <div class="picture__einraumhaus">
+          <picture>
+            <source media="(min-width:768px)" srcset="assets/images/einraumhaus_desktop.jpg">
+            <img class="image__einraumhaus" src="assets/images/einraumhaus_mobile.jpg" alt="Das Einraumhaus in Mannheim">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <p class="tags">Kunst/Labor/Soziales</p>
+
+    <div class="bubble bubble--flipped">
+      <video class="video" autoplay loop playsinline muted>
+        <source src="assets/images/MitAlphakanal.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/MitAlphakanal.webm" type="video/webm" alt="Style"/>
+      </video>
+
+      <video class="video video--second" autoplay loop playsinline muted>
+        <source src="assets/images/zweiKugeln.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/zweiKugeln.webm" type="video/webm" alt="Style"/>
+      </video>
+    </div>
+
+    <div class="body__lower">
+      <div class="body__lower__left">
+        <picture class="picture__alter_leer">
+          <source media="(min-width:768px)" srcset="assets/images/alter_leer_desktop.jpg">
+          <img class="image__alter_leer" src="assets/images/alter_leer_mobile.jpg" alt="Das Alter an einem ruhigem Tag">
+        </picture>
+        <picture>
+          <source media="(min-width:768px)" srcset="assets/images/einraumhaus_tor_desktop.jpg">
+          <img class="image__einraumhaus_tor" src="assets/images/einraumhaus_tor_mobile.jpg" alt="Das Einraumhaus mit Installation">
+        </picture>
+      </div>
+      <div class="body__lower__right">
+        <picture class="picture__schalen">
+          <source media="(min-width:768px)" srcset="assets/images/schalen_desktop.gif">
+          <img class="image__schalen" src="assets/images/schalen_mobile.gif" alt="Die Schalen für die Yufkas">
+        </picture>
+        <picture>
+          <source media="(min-width:768px)" srcset="assets/images/collage_desktop.jpg">
+          <img class="image__collage" src="assets/images/collage_mobile.jpg" alt="Eine collage über das einraumhaus">
+        </picture>
+        <picture class="picture__alter">
+          <source media="(min-width:768px)" srcset="assets/images/alter_desktop.jpg">
+          <img class="image__alter" src="assets/images/alter_mobile.jpg" alt="Das Alter im normalen Zustand">
+        </picture>
+      </div>
+    </div>
+
+    <div class="bubble bubble--flipped">
+      <video class="video" autoplay loop playsinline muted>
+        <source src="assets/images/MitAlphakanal.mp4" type="video/mp4" alt="Style"/>
+        <source src="assets/images/MitAlphakanal.webm" type="video/webm" alt="Style"/>
+      </video>
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <p>Franklin – George-Sullivan-Ring 61/63/65/67/69 – Mannheim</p>
+      <p>Haltestelle: Platz der Freundschaft</p>
+      <p>people@barac-mannheim.de</p>
+    </div>
+    
+    <div class="footer__impressum">
+      <table>
+        <tr>
+          <th class="first__column">Einraumhaus-Förderverein e.V.</th>
+          <th>barac GmbH</th>
+        </tr>
+        <tr>
+          <td>Myriam Holme</td>
+          <td>Philipp Morlock</td>
+        </tr>
+        <tr>
+          <td>Philipp Morlock</td>
+          <td>Andreas Handel</td>
+        </tr>
+       </table>
+    </div>
+  </footer>
 </body>
 </html>

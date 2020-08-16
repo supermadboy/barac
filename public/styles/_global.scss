@@ -1,30 +1,30 @@
 $breakpoint: 768px;
-$yellow: #FFFF00;
-$black: #000000;
-$white: #FFFFFF;
-$mobileTopMargin: 200px;
+$yellow: #ff0;
+$black: #000;
+$white: #fff;
+$mobile-top-margin: 200px;
 
-$mobileTitleSize: 80px;
+$mobile-title-size: 80px;
 
 
 * {
-    margin: 0;
-    font-family: 'Lyyra Extended';
-    cursor:  url('../assets/images/Cursor.png'), auto;
+  cursor: url('../assets/images/Cursor.png'), auto;
+  font-family: 'Lyyra Extended';
+  margin: 0;
 }
 
 body {
-    position: absolute;
+  position: absolute;
 
     
-    @media (min-width: $breakpoint) { 
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  @media (min-width: $breakpoint) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
 }
 
 .yellow {
-    color: $yellow
+  color: $yellow;
 }

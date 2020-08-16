@@ -1,0 +1,14 @@
+{
+    "extends": "stylelint-config-sass-guidelines",
+    "plugins": [
+      "@namics/stylelint-bem"
+    ],
+    "rules": {
+      "plugin/stylelint-bem-namics": {
+        "patternPrefixes": [],
+        "helperPrefixes": []
+      },
+      "selector-class-pattern": null,
+      "max-nesting-depth": 5
+    }
+  }
