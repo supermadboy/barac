@@ -76,10 +76,26 @@
 
     &__address {
       color: $yellow;
+      margin-bottom: 20px;
+
+      .seperator {
+        display: none;
+        
+        @media (min-width: $breakpoint) {
+          display: initial;
+        }
+      }
 
       @media (min-width: $breakpoint) {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+      }
+    }
+
+    &__exhibitions {
+      p {
+        font-family: 'Lyyra Extended';
+        font-size: 20px;
       }
     }
   }
@@ -93,7 +109,13 @@
     }
 
     &__section {
-            
+      width: 100%;
+
+
+      &--desktop {
+        display: none;
+      }
+
       @media (min-width: $breakpoint) {
         box-sizing: border-box;
         width: 50%;
@@ -112,12 +134,21 @@
           flex-direction: column;
           justify-content: space-between;
         }
+
+        &--desktop {
+          display: initial;
+        }
+
+        &--mobile {
+          display: none;
+        }
       }
 
       &__title {    
         border-bottom: 1px solid $white;
         margin-bottom: 5px;
         padding-bottom: 5px;
+        white-space: nowrap;
       }
 
       &__subtitle {
@@ -128,6 +159,38 @@
 
       }
     }
+
+    .images {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $breakpoint) {
+        flex-flow: row;
+      }
+
+      &--center {
+        justify-content: center;
+      }
+
+      img {
+        margin-top: 15px;
+        width: 200px;
+
+        @media (min-width: $breakpoint) {
+          margin-right: 20px;
+        }
+      }
+
+      .nojoke {
+        width: 100px;
+
+        @media (min-width: $breakpoint) {
+          margin-right: 0;
+          width: 150px;
+        }
+      }
+    }
   }
 
   &__footer {
@@ -135,7 +198,7 @@
     text-align: center;
 
     @media (min-width: $breakpoint) {
-      margin-bottom: 20px;
+      margin: 0 50px 20px;
     }
   }
 }
