@@ -165,20 +165,46 @@
       display: flex;
       flex-direction: column;
 
+      img {
+        margin-top: 25px;
+        width: 200px;
+
+        @media (min-width: $breakpoint) {
+          margin-right: 20px;
+        }
+      }
+
       @media (min-width: $breakpoint) {
         flex-flow: row;
+        justify-content: space-between;
       }
 
       &--center {
         justify-content: center;
       }
 
-      img {
-        margin-top: 15px;
-        width: 200px;
+      &--space {
 
         @media (min-width: $breakpoint) {
-          margin-right: 20px;
+          img {
+            margin-right: 0;
+          }
+
+          .basf {
+            width: 150px;
+          }
+
+          .mannheim {
+            width: 250px;
+          }
+        }
+      }
+
+      &--left {
+        
+        @media (min-width: $breakpoint) {
+          flex-flow: row;
+          justify-content: flex-start;
         }
       }
 
@@ -187,7 +213,7 @@
 
         @media (min-width: $breakpoint) {
           margin-right: 0;
-          width: 150px;
+          width: 120px;
         }
       }
     }
