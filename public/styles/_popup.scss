@@ -9,7 +9,7 @@
   visibility: hidden;
 
   @media (min-width: $breakpoint) {
-    max-width: 1000px;
+    max-width: 1025px;
   }
 
   &__scroll_body {
@@ -35,6 +35,10 @@
 
     
   p {
+    font-family: 'Barlow';
+  }
+
+  strong {
     font-family: 'Barlow';
   }
 
@@ -171,6 +175,13 @@
 
         @media (min-width: $breakpoint) {
           margin-right: 20px;
+        }
+      }
+
+      .mannheim {
+        
+        @media (min-width: $breakpoint) {
+          width: 250px;
         }
       }
 
