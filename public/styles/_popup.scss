@@ -67,165 +67,23 @@
   }
 
   &__subheader {
-    margin-bottom: 40px;
-    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__body {
+    margin-bottom: 50px;
+    padding: 0;
 
     @media (min-width: $breakpoint) {
       padding: 0 100px;
     }
 
-    &__info {
-      margin-bottom: 10px;
-    }
+    .paragraph {
+      margin-bottom: 15px;
 
-    &__address {
-      color: $yellow;
-      margin-bottom: 20px;
-
-      .seperator {
-        display: none;
-        
-        @media (min-width: $breakpoint) {
-          display: initial;
-        }
-      }
-
-      @media (min-width: $breakpoint) {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    &__exhibitions {
-      p {
-        font-family: 'Lyyra Extended';
-        font-size: 20px;
-      }
-    }
-  }
-
-  &__body {
-    display: flex;
-    flex-wrap: wrap;
-
-    @media (min-width: $breakpoint) {
-      margin: 0 50px;
-    }
-
-    &__section {
-      width: 100%;
-
-
-      &--desktop {
-        display: none;
-      }
-
-      @media (min-width: $breakpoint) {
-        box-sizing: border-box;
-        width: 50%;
-
-        &:first-child {
-          margin-right: 20px;
-          width: calc(50% - 20px);
-        }
-    
-        &--full {
-          width: 100%;
-        }
-
-        &--multiple {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-
-        &--desktop {
-          display: initial;
-        }
-
-        &--mobile {
-          display: none;
-        }
-      }
-
-      &__title {    
-        border-bottom: 1px solid $white;
-        margin-bottom: 5px;
-        padding-bottom: 5px;
-        white-space: nowrap;
-      }
-
-      &__subtitle {
-        font-weight: bold;
-      }
-
-      &__text {
-
-      }
-    }
-
-    .images {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-
-      img {
-        margin-top: 25px;
-        width: 200px;
-
-        @media (min-width: $breakpoint) {
-          margin-right: 20px;
-        }
-      }
-
-      .mannheim {
-        
-        @media (min-width: $breakpoint) {
-          width: 250px;
-        }
-      }
-
-      @media (min-width: $breakpoint) {
-        flex-flow: row;
-        justify-content: space-between;
-      }
-
-      &--center {
-        justify-content: center;
-      }
-
-      &--space {
-
-        @media (min-width: $breakpoint) {
-          img {
-            margin-right: 0;
-          }
-
-          .basf {
-            width: 150px;
-          }
-
-          .mannheim {
-            width: 250px;
-          }
-        }
-      }
-
-      &--left {
-        
-        @media (min-width: $breakpoint) {
-          flex-flow: row;
-          justify-content: flex-start;
-        }
-      }
-
-      .nojoke {
-        width: 100px;
-
-        @media (min-width: $breakpoint) {
-          margin-right: 0;
-          width: 120px;
-        }
+      span {
+        font-size: 19px;
+        margin-right: 5px;
       }
     }
   }
@@ -236,6 +94,13 @@
 
     @media (min-width: $breakpoint) {
       margin: 0 50px 20px;
+    }
+
+    a {
+      color: $white;
+      cursor: pointer;
+      line-height: 30px;
+      text-decoration: none;
     }
   }
 }
