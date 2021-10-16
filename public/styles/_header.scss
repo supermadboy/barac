@@ -7,6 +7,10 @@
   width: 100%;
   z-index: 1;
 
+  .tags--subtitle {
+    font-size: 23px;
+  }
+
   &__box {
     display: flex;
     justify-content: center;
@@ -32,10 +36,15 @@
       background-color: $yellow;
       display: flex;
       flex-direction: column;
-      height: 47px;
+      height: 59px;
       justify-content: space-between;
       padding: 6px 0;
-      width: 90px;
+      width: 100px;
+
+      &--text {
+        text-align: center;
+        margin: 0 10px;
+      }
     }
     
     &__address {

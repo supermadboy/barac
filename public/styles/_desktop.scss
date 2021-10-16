@@ -22,9 +22,64 @@
   }
 
   .body__upper {
+    margin-top: 16px;
+
     &__right {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+
+      &--text {
+        margin-right: 40px;
+
+        p {
+          font-family: 'Barlow';
+        }
+      }
+
+      &--pics {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+
+      &--text {
+        display: inline-block;
+        margin-left: 6%;
+        margin-top: 40px;
+        vertical-align: top;
+        width: 66%;
+      }
+
+      a,
+      b,
+      p {
+        font-family: 'Barlow';
+      }
+
+      .inline {
+        color: $black;
+        cursor: pointer;
+        font-family: 'Barlow';
+      }
+
+      .download {
+        background-color: $yellow;
+        color: $black;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        b {
+          cursor: pointer;
+        }
+      }
     }
 
     .picture {
@@ -37,12 +92,13 @@
         
     .image {
       &__gesamtansicht {
-        margin-bottom: 60px;
-        margin-bottom: 10%;
-        width: 80%;
+        display: block;
+        margin-left: 10%;
+        width: 60%;
       }
 
       &__yufkas {
+        margin-top: 20%;
         width: 20%;
       }
 
@@ -53,13 +109,14 @@
       }
 
       &__dachwohnung {
-        margin-left: 10%;
-        margin-top: 55%;
-        width: 60%;
+        margin-left: 25%;
+        margin-top: 5%;
+        width: 30%;
       }
 
       &__einraumhaus {
-        width: 90%;
+        margin-top: 10%;
+        width: 40%;
       }
     }
   }

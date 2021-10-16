@@ -68,6 +68,7 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
+              { from: 'assets', to: 'assets' },
               { from: 'assets/images', to: 'assets/images' },
               { from: 'index.html', to: 'index.html' },
               { from: 'robots.txt', to: 'robots.txt' },
